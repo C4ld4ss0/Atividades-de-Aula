@@ -1,5 +1,5 @@
 import java.util.*;
-public class RevisaoEx2{
+public class Lampada{
     
   public enum EstadoLampada{
     DESLIGADA, QUEIMADA, LIGADA
@@ -9,7 +9,7 @@ public class RevisaoEx2{
   private EstadoLampada estadoAtual = EstadoLampada.DESLIGADA;
   
   public static void main(String[] args){
-    RevisaoEx2 lampada = new RevisaoEx2();
+    Lampada lampada = new Lampada();
     lampada.ligar();
     System.out.println(lampada.getEstado());
   }
