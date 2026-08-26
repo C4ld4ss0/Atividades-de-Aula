@@ -1,12 +1,12 @@
 import java.util.*;
-public class RevisaoEx1{
+public class Circulo{
   
   private double raio = 3.0;
   private int pontoX = 7;
   private int pontoY = 9;
   
   public static void main(String [] args){
-    RevisaoEx1 circulo = new RevisaoEx1();  
+    Circulo circulo = new Circulo();  
     
     circulo.getInformacoes();
     
