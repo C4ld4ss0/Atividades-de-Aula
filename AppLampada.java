@@ -1,5 +1,5 @@
 
-public class App{
+public class AppLampada{
     public static void main(String[] args){
         
         Semaforo[] listaSemaforo = new Semaforo[10];
