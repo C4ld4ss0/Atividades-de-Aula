@@ -1,4 +1,3 @@
-import java.util.*;
 public class Circulo{
   
   private double raio = 3.0;
