@@ -35,6 +35,7 @@ public class ConversaoDeUnidadesDeTemperatura{
 
   public void transformarParaKelvin(){ 
       switch(escalaInicial){
+          tempConversao = tempInicial;
         case KELVIN:
           break;
         case CELCIUS:
