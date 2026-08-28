@@ -1,42 +1,21 @@
-import java.util.*;
-public class ConversaoDeUnidadesDeTemperatura{
+
+public class ConversaoDeUnidadesDeTemperaturaV2{
 
   public enum TempDesejada{
     KELVIN, CELCIUS, FAHRENHEIT, REAUMUR, RANKINE  
   }
   
-
   private double tempInicial;
   private double tempConversao;
 
   private TempDesejada escalaInicial;
   private TempDesejada escalaFinal;
 
-  public static void main(String[] args){
-    Scanner sc = new Scanner(System.in);
-    ConversaoDeUnidadesDeTemperatura conversor = new ConversaoDeUnidadesDeTemperatura();
-
-    System.out.println("Informe a Escala da temperatura inicial:\n CELCIUS\n FAHRENHEIT\n KELVIN\n REAUMUR\n RANKINE\n");
-    String entradaEscalaInicial = sc.nextLine().toUpperCase();
-    conversor.escalaInicial = TempDesejada.valueOf(entradaEscalaInicial);
-
-    System.out.println("Informe para qual Escala da temperatura que queres transformar:\n CELCIUS\n FAHRENHEIT\n KELVIN\n REAUMUR\n RANKINE\n"); 
-    String entradaEscalaFinal = sc.nextLine().toUpperCase();
-    conversor.escalaFinal = TempDesejada.valueOf(entradaEscalaFinal);
-
-    System.out.println("Informe o Valor da temperatura: ");
-    conversor.setTempInicial(sc.nextDouble());
-
-    conversor.transformarParaKelvin();
-    conversor.transformarParaDesejado();
-
-    sc.close();
-  }
 
   public void transformarParaKelvin(){ 
       switch(escalaInicial){
-          tempConversao = tempInicial;
         case KELVIN:
+          tempConversao = tempInicial;
           break;
         case CELCIUS:
           tempConversao = tempInicial + 273.15;
