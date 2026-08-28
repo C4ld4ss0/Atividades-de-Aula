@@ -16,18 +16,19 @@ public class ConversaoDeUnidadesDeTemperatura{
     Scanner sc = new Scanner(System.in);
     ConversaoDeUnidadesDeTemperatura conversor = new ConversaoDeUnidadesDeTemperatura();
 
-    System.out.println("Informe a Escala da temperatura que vai informar:\n CELCIUS\n FAHRENHEIT\n KELVIN\n REAMUR\n RANKINE\n");
+    System.out.println("Informe a Escala da temperatura inicial:\n CELCIUS\n FAHRENHEIT\n KELVIN\n REAUMUR\n RANKINE\n");
     String entradaEscalaInicial = sc.nextLine().toUpperCase();
     conversor.escalaInicial = TempDesejada.valueOf(entradaEscalaInicial);
 
-    System.out.println("Informe a Escala da temperatura que queres transformar: CELCIUS\n FAHRENHEIT\n KELVIN\n REAMUR\n RANKINE\n"); 
+    System.out.println("Informe para qual Escala da temperatura que queres transformar:\n CELCIUS\n FAHRENHEIT\n KELVIN\n REAUMUR\n RANKINE\n"); 
     String entradaEscalaFinal = sc.nextLine().toUpperCase();
     conversor.escalaFinal = TempDesejada.valueOf(entradaEscalaFinal);
 
+    System.out.println("Informe o Valor da temperatura: ");
+    conversor.setTempInicial(sc.nextDouble());
 
-
-
-
+    conversor.transformarParaKelvin();
+    conversor.transformarParaDesejado();
 
     sc.close();
   }
