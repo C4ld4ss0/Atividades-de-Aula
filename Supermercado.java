@@ -59,7 +59,7 @@ public class Supermercado {
 
         for(Caixa caixa : caixas){
             if(caixa != null && caixa.getStatus() == StatusCaixa.ATIVO){
-                if(caixa.getNroClientesNaFila() < caixa.getNroClientesNaFila()){
+                if(caixa.getNroClientesNaFila() < caixa.getTamMaxFila()){
                     if(caixa.getNroClientesNaFila() < menorFila){
                         menorFila = caixa.getNroClientesNaFila();
                         melhorCaixa = caixa;
