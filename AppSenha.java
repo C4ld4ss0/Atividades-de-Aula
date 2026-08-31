@@ -7,13 +7,13 @@ public class AppSenha{
         System.out.println("Informe o tamanho do vetor: ");
         int tamanho = sc.nextInt();
         
-        senha[] vetSenha = new senha[tamanho];
+        Senha[] vetSenha = new Senha[tamanho];
         int instanciados = 0;
         
         while (instanciados < tamanho){
             int posicao = rand.nextInt(tamanho);
             if(vetSenha[posicao] == null){
-                vetSenha[posicao] = new senha();
+                vetSenha[posicao] = new Senha();
                 instanciados++;
             }
         }

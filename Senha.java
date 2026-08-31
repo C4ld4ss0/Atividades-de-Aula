@@ -1,9 +1,9 @@
 
-public class senha{
+public class Senha{
     private static int senhaAtual = 1;
     private int minhaSenha;
     
-    public senha(){
+    public Senha(){
         this.minhaSenha = senhaAtual;
         senhaAtual++;
     }
