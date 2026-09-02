@@ -1,3 +1,4 @@
+package Exercicio_Senha;
 
 public class Senha{
     private static int senhaAtual = 1;

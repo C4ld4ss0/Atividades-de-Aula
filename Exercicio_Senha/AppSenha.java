@@ -1,3 +1,4 @@
+package Exercicio_Senha;
 import java.util.*;
 public class AppSenha{
     public static void main(String[] args){

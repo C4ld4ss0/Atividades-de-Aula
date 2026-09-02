@@ -1,3 +1,4 @@
+package Exercicio_Supermercado;
 public enum StatusCaixa{
         ATIVO(1),
         INATIVO(2);

@@ -1,3 +1,4 @@
+package Exercicio_Supermercado;
 public class Caixa {
     private static int idGerador = 0;
     private int id;

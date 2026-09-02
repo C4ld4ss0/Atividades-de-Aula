@@ -1,3 +1,4 @@
+package Exercicio_temperatura;
 import java.util.*;
 
 public class AppTemperatura{

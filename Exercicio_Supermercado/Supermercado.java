@@ -1,3 +1,4 @@
+package Exercicio_Supermercado;
 import java.util.Random;
 public class Supermercado {
     private int nroCaixas;

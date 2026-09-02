@@ -1,3 +1,4 @@
+package Exercicio_temperatura;
 
 public class ConversaoDeUnidadesDeTemperaturaV2{
 
