@@ -3,7 +3,7 @@ package Exercicio_Passagem
 public class Economy(){
 
 
-public custoBagagem(){
+public custoBagagem(int qtdade, int[] pesos){
     
 
 }
