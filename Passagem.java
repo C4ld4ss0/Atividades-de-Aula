@@ -6,7 +6,7 @@ public abstract class Passagem{
   private String assento;
   private double custoPassagem;
   
-public double custoBagagem(int qtdade, int pesos){
+public double custoBagagem(int qtdade, int[] pesos){
 
 
 }
