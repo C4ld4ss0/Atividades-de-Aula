@@ -2,19 +2,18 @@ package Exercicio_Passagem;
 
 public class Executive extends Passagem{
   
-public Executive(String CPF, String nome, double custoPassagem){
-  super(CPF, nome, custoPassagem);
-
-
-}
-public double custoPassagem(int qtdade, int[] pesos){
-
+  public Executive(String CPF, String nome, double custoPassagem){
+    super(CPF, nome, custoPassagem);
   }
 
-public int getMilhas(){
+  public double custoPassagem(int qtdade, int[] pesos){
+    
+  }
 
-  return ;
-}
+  public int getMilhas(){
+
+    return ;
+  }
   
 }
 
