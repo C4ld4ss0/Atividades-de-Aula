@@ -6,14 +6,20 @@ public class Executive extends Passagem{
     super(CPF, nome, custoPassagem);
   }
 
-  public double custoPassagem(int qtdade, int[] pesos){
-    
+  @Override 
+  public double custoBagagem(int qtdade, int[] pesos){
+    if(qtdade <= 2){
+      return 0.0;
+    } 
+    double custoExcedente = 0;
+    for(int i = 2; i< qtdade; i++){
+      custoExcedente += pesos[i] * 0.5;
+    }
+    return custoExcedente;
   }
 
+  @Override
   public int getMilhas(){
-
-    return ;
+    return (int) (this.custoPassagem * 0.1);
   }
-  
 }
-

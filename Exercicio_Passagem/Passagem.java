@@ -4,7 +4,7 @@ public abstract class Passagem{
   private String CPF;
   private String nome;
   private String assento;
-  private double custoPassagem;
+  protected double custoPassagem;
 
   
 

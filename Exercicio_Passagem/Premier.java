@@ -2,18 +2,24 @@ package Exercicio_Passagem;
 
 public class Premier extends Executive{
 
-    public Premier(String CPF, String nome, double custoPassagem){
-  super(CPF, nome, custoPassagem);
+  public Premier(String CPF, String nome, double custoPassagem){
+    super(CPF, nome, custoPassagem);
   
-    }
+  }
 
-    public double custoBagagens(int qtdade, int[] pesos){
+  @Override 
+  public double custoBagagem(int qtdade, int[] pesos){
+    return super.custoBagagem(qtdade, pesos) * 0.5;
+  }
 
-    }
+  @Override
+  public double defineAssento(String a){
+    super.defineAssento(a);
+    return 0.0;
+  }
 
-    public double defineAssento(String a){
-
-
-    }
-
+  @Override
+  public int getMilhas(){
+    return (int) (this.custoPassagem * 0.20);
+  }
 }
