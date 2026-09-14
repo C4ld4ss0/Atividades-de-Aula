@@ -1,19 +1,24 @@
 package Exercicio_Agenda;
 
-public class RelatorioFinanceiro extends Agendavel {
-    
+public class RelatorioFinanceiro implements Agendavel {
+    private String horario;
+
     public RelatorioFinanceiro(String horario) {
-        super(horario);
+        this.horario = horario;
+    }
+    
+    @Override
+    public void agendar(String horario) {
+        this.horario = horario;
     }
 
     @Override
     public void executar() {
-        System.out.println("Executando o relatório financeiro no horário: " + getHorario());
+        System.out.println("Executando o relatório financeiro no horário: " + horario);
     }
 
     @Override
     public void monitorar() {
-        System.out.println("Monitorando o relatório financeiro no horário: " + getHorario());
+        System.out.println("Monitorando o relatório financeiro no horário: " + horario);
     }
-    
 }

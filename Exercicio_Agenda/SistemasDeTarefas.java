@@ -1,23 +1,32 @@
 package Exercicio_Agenda;
 
+
+import java.util.*;
+
 public class SistemasDeTarefas {
 
-    private Agendavel[] tarefa;
+    private ArrayList<Agendavel> tarefas = new ArrayList<>();
     
     public void adicionarTarefa(Agendavel tarefa) {
-        // Lógica para adicionar a tarefa à lista de tarefas agendadas
+        tarefas.add(tarefa);
     }
 
     public void agendarTodas(String horario) {
-        // Lógica para agendar todas as tarefas no horário especificado
+        for (Agendavel tarefa : tarefas) {
+            tarefa.agendar(horario);
+        }
     }
 
     public void executarTodas() {
-        // Lógica para executar todas as tarefas agendadas
+        for (Agendavel tarefa : tarefas) {
+            tarefa.executar();
+        }
     }
 
     public void monitorarTarefas() {
-        // Lógica para monitorar todas as tarefas agendadas
+        for (Agendavel tarefa : tarefas) {
+            tarefa.monitorar();
+        }
     }
 
 }
