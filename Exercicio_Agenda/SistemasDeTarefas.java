@@ -1,6 +1,8 @@
 package Exercicio_Agenda;
 
 public class SistemasDeTarefas {
+
+    private Agendavel[] tarefa;
     
     public void adicionarTarefa(Agendavel tarefa) {
         // Lógica para adicionar a tarefa à lista de tarefas agendadas

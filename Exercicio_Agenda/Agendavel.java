@@ -12,6 +12,10 @@ public abstract class Agendavel {
         return horario;
     }
 
+    public void agendar(String horario) {
+        this.horario = horario;
+    }
+
     public void executar(){
         System.out.println("Executando a tarefa agendada no horário: " + horario);
     }
