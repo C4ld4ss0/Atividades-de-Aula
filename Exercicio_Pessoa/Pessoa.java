@@ -1,6 +1,7 @@
 package Exercicio_Pessoa;
+import Exercício_Impressora.Imprimivel;
 
-public abstract class Pessoa{
+public abstract class Pessoa implements Imprimivel{
     private static int contador = 100;
     private final int id;
     private String nome;
@@ -8,7 +9,6 @@ public abstract class Pessoa{
     public Pessoa (String nome){
         this.id = contador;
         contador++;
-
         this.nome = nome;
     }
 
@@ -25,4 +25,12 @@ public abstract class Pessoa{
         return String.format("(%d) %s", id + nome);
     }
 
+    @Override
+    public int imprimir(){
+        String texto = this.toString();
+        System.out.println("-------------------------");
+        System.out.println("| " + texto);
+        System.out.println("-------------------------");
+        return texto.length();
+    }
 }
