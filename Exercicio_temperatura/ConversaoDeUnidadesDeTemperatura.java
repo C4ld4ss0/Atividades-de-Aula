@@ -3,14 +3,14 @@ package Exercicio_temperatura;
 public class ConversaoDeUnidadesDeTemperatura{
 
   public enum TempDesejada{
-    KELVIN, CELCIUS, FAHRENHEIT, REAUMUR, RANKINE  
+    KELVIN, CELSIUS, FAHRENHEIT, REAUMUR, RANKINE  
   }
   
   public static double transformarParaKelvin(double tempInicial, TempDesejada escalaInicial){ 
       switch(escalaInicial){
         case KELVIN:
             return tempInicial;
-        case CELCIUS:
+        case CELSIUS:
             return tempInicial + 273.15;
         case FAHRENHEIT:
             return ((tempInicial - 32.0) * 5.0/9.0) + 273.15;
@@ -28,7 +28,7 @@ public class ConversaoDeUnidadesDeTemperatura{
       switch(escalaFinal){
         case KELVIN:
             return tempEmKelvin;
-        case CELCIUS:
+        case CELSIUS:
             return tempEmKelvin - 273.15;
         case FAHRENHEIT:
             return ((tempEmKelvin - 273.15) * 9.0/5.0) + 32.0;
