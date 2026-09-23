@@ -14,7 +14,12 @@ public class AppLampadaColorida {
         for (int j = 0; j < lampadas.length; j++){
             if (lampadas[j].getEstado() == Lampada.EstadoLampada.QUEIMADA){
                 System.out.println(lampadas[j].getEtiqueta());
-                System.out.println(lampadas[j].getEtiqueta() + " " + lampadas[j].getCor());
+            }
+        }
+		 System.out.printf("\nLâmpadas Queimadas (Com a cor inclusa): \n");
+        for (int k = 0; k < lampadas.length; k++){
+            if (lampadas[k].getEstado() == Lampada.EstadoLampada.QUEIMADA){
+                System.out.println(lampadas[k].getEtiqueta() + " " + lampadas[k].getCor());
             }
         }
     }
