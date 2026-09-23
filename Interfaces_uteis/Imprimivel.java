@@ -1,4 +1,4 @@
-package Exercício_Impressora;
+package Interfaces_uteis;
 
 public interface Imprimivel {
 

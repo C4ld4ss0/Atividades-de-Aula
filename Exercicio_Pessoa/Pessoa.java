@@ -1,5 +1,5 @@
 package Exercicio_Pessoa;
-import Exercício_Impressora.Imprimivel;
+import Interfaces_uteis.Imprimivel;
 
 public abstract class Pessoa implements Imprimivel{
     private static int contador = 100;

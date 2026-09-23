@@ -1,4 +1,4 @@
-package Exercício_Impressora;
+package Interfaces_uteis;
 
 public class Relatorio implements Imprimivel {
     private String dados;
