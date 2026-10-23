@@ -7,7 +7,7 @@ public class Instrutor extends Pessoa {
         this.Especialidade = Especialidade;
         this.salario = salario;
     }
-
+//
     public String getEspecialidade() {return Especialidade;}
 
     public double getSalario() {return salario;}

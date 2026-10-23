@@ -8,7 +8,7 @@ public class Registroduplicata {
         this.numeroLinha = numeroLinha;
         this.identificadorRepetido = identificadorRepetido;
     }
-
+//
     public String getNomeArquivo() { return nomeArquivo; }
     public int getNumeroLinha() { return numeroLinha; }
     public String getIdentificadorRepetido() { return identificadorRepetido; }

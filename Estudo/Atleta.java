@@ -1,7 +1,7 @@
 
 public class Atleta extends Pessoa {
     private String Modalidade;
-
+//
     public Atleta(String nome, String cpf, int idade, String Modalidade) {
         super(nome, cpf, idade);
         this.Modalidade = Modalidade;

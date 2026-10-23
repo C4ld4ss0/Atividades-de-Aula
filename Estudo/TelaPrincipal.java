@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.util.List;
-
+//
 public class TelaPrincipal extends JFrame {
     private Equipe equipe;
     

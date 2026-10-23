@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class Equipe {
     private List<Pessoa> membros;
     private List<Registroduplicata> duplicatasEncontradas;
-
+//
     public Equipe() {
         this.membros = new ArrayList<>();
         this.duplicatasEncontradas = new ArrayList<>();

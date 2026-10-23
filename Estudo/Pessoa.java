@@ -9,7 +9,7 @@ public abstract class Pessoa {
         this.cpf = SimplificarCpf(cpf);
         this.idade = idade;
     }
-
+//
     private String SimplificarCpf(String cpfBruto) {
         if (cpfBruto == null) {
             return "";
