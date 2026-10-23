@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Circulo
-comment1.params=x\ y\ raio
-comment1.target=Circulo(double,\ double,\ double)
-comment2.params=
-comment2.target=double\ getRaio()
-comment3.params=
-comment3.target=double\ getArea()
-numComments=4
