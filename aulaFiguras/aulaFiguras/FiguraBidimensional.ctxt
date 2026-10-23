@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=FiguraBidimensional
+comment1.params=x\ y
+comment1.target=FiguraBidimensional(double,\ double)
+comment2.params=
+comment2.target=double\ getX()
+comment3.params=
+comment3.target=double\ getY()
+comment4.params=
+comment4.target=double\ getArea()
+numComments=5
